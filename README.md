@@ -1,3 +1,7 @@
+## LINK to this app
+
+http://gabrieltcm.github.io/weather-app
+
 # PROJECT SETUP
 
 - This app is created via CREATE-REACT-APP
