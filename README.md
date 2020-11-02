@@ -1,4 +1,4 @@
-## LINK to this app
+# LINK to this app
 
 http://gabrieltcm.github.io/weather-app
 
