@@ -1,0 +1,68 @@
+@mixin button-list {
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: #f53434;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  &:hover {
+    background-color: #ff5e4f;
+  }
+}
+
+//FORM
+.formContainer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.label {
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+
+::placeholder {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+input[type="text"] {
+  outline: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 20px;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+input:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.submit {
+  @include button-list();
+}
+
+@media screen and(max-width: 870px) {
+  .submit {
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+  }
+}
