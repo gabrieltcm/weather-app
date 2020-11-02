@@ -51,7 +51,7 @@ const Main = () => {
 
     setError(null);
     const API_KEY = "53de08b7a7ff9dbc9df4ea3a801b1bd2";
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     const request = axios.get(url); //do a http call with axios
     const response = await request; //all the data received from the API will be stored inside this reponse const
 
