@@ -10,7 +10,7 @@ http://gabrieltcm.github.io/weather-app
   - Axios
   - SASS
   - Weather-icons from (https://github.com/erikflowers/weather-icons.git)
-- Classes are all functional components (React Hooks)
+- JS files are all functional components (React Hooks)
 
 # HOW TO USE THIS APP
 
