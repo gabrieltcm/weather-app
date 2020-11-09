@@ -11,6 +11,7 @@ http://gabrieltcm.github.io/weather-app
   - SASS
   - Weather-icons from (https://github.com/erikflowers/weather-icons.git)
 - JS files are all functional components (React Hooks)
+- Context API was used in this project to handle props
 
 # HOW TO USE THIS APP
 
@@ -20,6 +21,7 @@ http://gabrieltcm.github.io/weather-app
 3. The logo will change according to the weather conditions
 4. Your able to add up to 3 weather cities
    - if more than 3, the app will propmt an error message
+5. You can then delete the cities and add a new city
 
 # FUTURE SCALABILITY
 
