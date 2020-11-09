@@ -10,11 +10,6 @@
   padding: 0px 50px;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {
-  margin: 0 -5px;
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -25,8 +20,8 @@
 /* Responsive columns */
 @media screen and (max-width: 1000px) {
   .column {
-    width: 90%;
-    //display: block;
+    width: 100%;
+    display: block;
     margin-bottom: 20px;
   }
 }
@@ -42,4 +37,18 @@
 i {
   font-size: 60px;
   padding: 50px;
+}
+
+.delete {
+  border: 1px solid black;
+  background: none;
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    color: red;
+    border: 1px solid red;
+  }
 }

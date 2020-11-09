@@ -66,13 +66,23 @@ const Main = () => {
 
     //to check if the there is more than 3 cards, if yes return ERROR
     if (weatherArray.length >= 3)
-      return setError("Only can insert 3 weather cities :(");
+      return setError(
+        "Only can insert 3 weather cities, please delete and add new city"
+      );
     // the ...(spread operator), means insterting weatherInfo in to weatherArray
     // eg:
     // const array = ["1","2","3"]
     // setArray(...array, "6")
     // OUTPUT: 1,2,3,6
     setweatherArray([...weatherArray, weatherInfo]); //assign all the data gathered from the API in to an ARRAY
+  };
+
+  //Gets invoked when the X button is clicked
+  const delete_cards = (index) => {
+    const deletedArray = [...weatherArray];
+    deletedArray.splice(index, 1);
+    setweatherArray(deletedArray);
+    return setError(null);
   };
 
   return (
@@ -85,6 +95,7 @@ const Main = () => {
           call_the_api: api_call,
           error: error,
           array_of_weather: weatherArray,
+          delete_cards,
         }}
       >
         <Form />
