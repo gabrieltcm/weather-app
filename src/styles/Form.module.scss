@@ -30,6 +30,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   color: whitesmoke;
+  margin-left: 20px;
 }
 
 ::placeholder {
@@ -37,7 +38,9 @@
   opacity: 0.4;
 }
 
-input[type="text"] {
+input,
+[type="text"],
+[type="number"] {
   outline: none;
   background-color: transparent;
   color: whitesmoke;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 //Weather Icons
@@ -39,6 +39,12 @@ const Main = () => {
         return "wi-day-fog";
     }
   };
+
+  // useEffect((e) => {
+  //   const refresh = e.target.elements.refresh.value;
+  //   const interval = setInterval(api_call, refresh);
+  // }, []);
+
   //The async await combination make sure that the api_call method does not go any further until axios has successfully made the request,
   // and received the data from the API.
   // Axios being a PROMISE based request, we also need to give Axios something back. So the best way to handle a PROMISE is to use ASYNC AWAIT.
@@ -54,7 +60,6 @@ const Main = () => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     const request = axios.get(url); //do a http call with axios
     const response = await request; //all the data received from the API will be stored inside this reponse const
-
     // an object containing all the necessary data i want from the Openweather api
     // storing data in to a key (city,weatherIcon,temp,description)
     const weatherInfo = {
